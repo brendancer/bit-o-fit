@@ -1,7 +1,7 @@
 const mongoose = require("mongoose");
 const Schema = mongoose.Schema;
 
-const CardioSchema = new Schema({
+const cardioSchema = new Schema({
   cardioName: {
     type: String,
     trim: true,
@@ -12,5 +12,13 @@ const CardioSchema = new Schema({
     trim: true,
     required: false,
   },
-  duration,
+  duration: {
+    type: Number,
+    trim: true,
+    required: false,
+  },
 });
+
+const Cardio = mongoose.model("Cardio", cardioSchema);
+
+module.exports = Cardio;
