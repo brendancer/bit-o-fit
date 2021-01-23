@@ -44,8 +44,4 @@ router.post("/api/workout", (req, res) => {
     });
 });
 
-router;
-
-router.update();
-
 module.exports = router;
