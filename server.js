@@ -14,14 +14,9 @@ mongoose.connect(
   process.env.MONGODB_URI || "mongodb://localhost/workoutTracker",
   {
     useNewUrlParser: true,
-    useUnifiedTopology: true,
-    useCreateIndex: true,
     useFindAndModify: false,
   }
 );
-
-//app.use(require("./routes/api.js"));
-//app.use(require(".routes/homeroutes.js"))
 
 app.listen(PORT, () => {
   console.log(`App is now running on ${PORT}, Thank Goodness.`);
